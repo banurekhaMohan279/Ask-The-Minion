@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ask The Minion!</title>
+    <link rel="stylesheet" type= "text/css" href="css/index.css"/>
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="minionContainer">
+      <header>Ask The Minion</header>
+      <section class="userQuestion">
+          <input type="text" placeholder="Ask Minion your question"
+          onkeydown = "if (event.keyCode == 13) clickEvent(this.value)"/> <!-- For enterkey event, pass value with this.value -->
+      </section>
+      <section class="userReply">
+          <img src='img/minion.jpg' alt="A Minion Image" id="minionImg"/>
+      </section>
+      <!--<footer>Github Tweet</footer>-->
+    </div>
+  </body>
+</html>

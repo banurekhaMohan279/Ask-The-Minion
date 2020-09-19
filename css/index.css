@@ -1,0 +1,71 @@
+.minionContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fdd835;
+  color:#e0dddd;
+  font-family:"Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+  font-size: 3rem; /*em and rem respond only to zoom - if viewport resize needed use - vw/vh*/
+  height:100%;
+  width: 100%;
+}
+
+.userQuestion,.userQuestion input, header, footer{
+  width:100%;
+}
+
+header{
+  height:7%;
+  background-color: #444c44;
+  padding:0.5%;
+  margin:1% 2% 0 2%;
+}
+
+.userQuestion{
+  height: 7%;
+  padding-left:5%;
+  /*box-shadow: inset 0px 0px 0px 3px #004682;*/
+  -webkit-transition: ease 2s; /* transition properties*/
+  transition: ease 2s;
+}
+
+.userQuestion input{
+  font-size: 1em;
+  background:none;
+  border:0px;
+  border-left: 1px solid #f9a825;
+  color:#f9a825;
+}
+
+.userQuestion input:focus{
+  outline:none;
+  cursor:none;
+}
+
+.userQuestion input::placeholder{
+  color:#f9a825;
+}
+
+.userReply{
+  width: 90%;
+  height: 55vh;
+  background: #ffe15f;
+  box-shadow: 1px solid #ffe15f;
+  padding:5%;
+  margin:2%;
+  display: flex; /*display:flex if width*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.userReply img{
+  height:100%;
+  object-fit: contain;
+}
+
+footer{
+  height:5%;
+  font-size:0.5em;
+}
