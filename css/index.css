@@ -1,14 +1,46 @@
+html,body{
+  height:100%;
+  overflow:hidden;
+  margin: 0px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fdd835;
+  height:100%;
+}
+
 .minionContainer{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #fdd835;
   color:#e0dddd;
-  font-family:"Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
-  font-size: 3rem; /*em and rem respond only to zoom - if viewport resize needed use - vw/vh*/
+  font-family: helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2rem; /*em and rem respond only to zoom - if viewport resize needed use - vw/vh*/
+  font-weight: 100;
   height:100%;
-  width: 100%;
+  width: 95%;
+}
+
+.social{
+  display: flex; /*Use display flex for every child's parent that needs alignment*/
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width:5%;
+  height:100%;
+}
+
+.social a{
+  width:100%;
+}
+
+.social img{
+  width: 2rem;
 }
 
 .userQuestion,.userQuestion input, header, footer{
@@ -16,14 +48,14 @@
 }
 
 header{
-  height:7%;
-  background-color: #444c44;
-  padding:0.5%;
-  margin:1% 2% 0 2%;
+  height:auto;
+  background-color: #111511;
+  padding:0.5% 0.5% 0.5% 2%;
+  margin:1% 2% 1% 2%;
 }
 
 .userQuestion{
-  height: 7%;
+  height: auto;
   padding-left:5%;
   /*box-shadow: inset 0px 0px 0px 3px #004682;*/
   -webkit-transition: ease 2s; /* transition properties*/
@@ -32,10 +64,14 @@ header{
 
 .userQuestion input{
   font-size: 1em;
+  font-weight: 100;
+  font-family: helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   background:none;
   border:0px;
   border-left: 1px solid #f9a825;
   color:#f9a825;
+  padding-left: 1%;
 }
 
 .userQuestion input:focus{
@@ -49,8 +85,9 @@ header{
 
 .userReply{
   width: 90%;
-  height: 55vh;
-  background: #ffe15f;
+  height: 50%;
+  background-image: url('../img/background.jpg');
+  background-repeat: repeat;
   box-shadow: 1px solid #ffe15f;
   padding:5%;
   margin:2%;

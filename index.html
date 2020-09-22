@@ -7,16 +7,23 @@
     <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
-    <div class="minionContainer">
-      <header>Ask The Minion</header>
-      <section class="userQuestion">
-          <input type="text" placeholder="Ask Minion your question"
-          onkeydown = "if (event.keyCode == 13) clickEvent(this.value)"/> <!-- For enterkey event, pass value with this.value -->
-      </section>
-      <section class="userReply">
-          <img src='img/minion.jpg' alt="A Minion Image" id="minionImg"/>
-      </section>
-      <!--<footer>Github Tweet</footer>-->
+    <div class="container">
+      <div class="minionContainer">
+        <header>Ask The Minion</header>
+        <section class="userQuestion">
+            <input type="text" placeholder="Tell or Ask a minion something ...."
+            onkeydown = "if (event.keyCode == 13) clickEvent(this.value)"/> <!-- For enterkey event, pass value with this.value -->
+        </section>
+        <section class="userReply">
+            <img src='img/minion.gif' alt="A Minion Image" id="minionImg"/>
+        </section>
+      </div>
+      <aside class="social">
+          <a href="https://github.com/banurekhaMohan279/Ask-The-Minion" target="_blank">
+            <img src="img/github.svg" alt="Github"/>
+          </a>
+      </aside>
     </div>
+
   </body>
 </html>
