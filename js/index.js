@@ -9,7 +9,7 @@ function clickEvent(ques){
 
   xhr.addEventListener("readystatechange", function () {
   if (this.readyState === this.DONE) {
-    console.log(this.responseText);
+    loader.classList.toggle('hide');
     let random=Math.floor(Math.random() * 4) + 1;/*Generate random number in range*/
     if (JSON.parse(this.responseText).label=="positive"){
       document.getElementById("minionImg").src="img/"+"positive"+"Minion"+random+".gif"; /* Modify HTML with JS result*/
@@ -20,6 +20,7 @@ function clickEvent(ques){
   }
   });
 
+  loader.classList.toggle('hide');
   xhr.open("POST", "https://sentiment-analysis4.p.rapidapi.com/reviews");
   xhr.setRequestHeader("x-rapidapi-host", "sentiment-analysis4.p.rapidapi.com");
   xhr.setRequestHeader("x-rapidapi-key", "ed95d6a8d5msh9801e7ace5e9004p11d682jsn8cfbda00cba6");

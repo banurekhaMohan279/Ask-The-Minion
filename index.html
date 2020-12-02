@@ -10,13 +10,18 @@
     <div class="container">
       <div class="minionContainer">
         <header>Ask The Minion</header>
+
         <section class="userQuestion">
             <input type="text" placeholder="Tell or Ask a minion something ...."
             onkeydown = "if (event.keyCode == 13) clickEvent(this.value)"/> <!-- For enterkey event, pass value with this.value -->
         </section>
+
+        <img src = "img/loader.gif" alt="Loader" id = "loader" class = "hide"/>
+
         <section class="userReply">
             <img src='img/minion.gif' alt="A Minion Image" id="minionImg"/>
         </section>
+
       </div>
       <aside class="social">
           <a href="https://github.com/banurekhaMohan279/Ask-The-Minion" target="_blank">
