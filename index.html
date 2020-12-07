@@ -12,8 +12,9 @@
         <header>Ask The Minion</header>
 
         <section class="userQuestion">
-            <input type="text" placeholder="Tell or Ask a minion something ...."
+            <input id = "userQues" type="text" placeholder="Tell or Ask a minion something ...."
             onkeydown = "if (event.keyCode == 13) clickEvent(this.value)"/> <!-- For enterkey event, pass value with this.value -->
+            <label for = "userQues" class = "hide">Tell or Ask a minion something ....</label>
         </section>
 
         <img src = "img/loader.gif" alt="Loader" id = "loader" class = "hide"/>
