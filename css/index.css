@@ -70,7 +70,7 @@ header{
   background:none;
   border:0px;
   border-left: 1px solid #f9a825;
-  color:#f9a825;
+  color:#de6c6c;
   padding-left: 1%;
 }
 
@@ -80,7 +80,7 @@ header{
 }
 
 .userQuestion input::placeholder{
-  color:#f9a825;
+  color:#de6c6c;
 }
 
 .userReply{
