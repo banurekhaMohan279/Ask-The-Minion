@@ -9,13 +9,14 @@ function clickEvent(ques){
 
   xhr.addEventListener("readystatechange", function () {
   if (this.readyState === this.DONE) {
-    loader.classList.toggle('hide');
     let random=Math.floor(Math.random() * 4) + 1;/*Generate random number in range*/
     if (JSON.parse(this.responseText).label=="positive"){
       document.getElementById("minionImg").src="img/"+"positive"+"Minion"+random+".gif"; /* Modify HTML with JS result*/
+      loader.classList.toggle('hide');
     }
     else{
       document.getElementById("minionImg").src="img/"+"negative"+"Minion"+random+".gif";
+      loader.classList.toggle('hide');
     }
   }
   });
@@ -28,5 +29,4 @@ function clickEvent(ques){
   xhr.setRequestHeader("accept", "application/json");
 
   xhr.send(data);
-  console.log("success");
 }
