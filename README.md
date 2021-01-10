@@ -3,6 +3,11 @@ Ask a minion your question and wait for the fun to begin!
 
 ### ![App at work](https://github.com/banurekhaMohan279/Ask-The-Minion/blob/master/img/workingModel.gif)
 
+### Tech Stack
+- HTML5
+- CSS3
+- Vanilla Js
+
 ### [Demo Here](https://banurekhamohan279.github.io/Ask-The-Minion/)
 
 ### Screenshots
