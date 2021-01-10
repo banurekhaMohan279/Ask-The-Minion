@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 html,body{
   height:100%;
   overflow:hidden;
   margin: 0px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container{
   display: flex;
   flex-wrap: wrap;
-  background-color: #fdd835;
+  background-image: linear-gradient(to bottom right, #fdd835, #fbc02d);
   height:100%;
 }
 
@@ -17,10 +20,8 @@ html,body{
   align-items: center;
   flex-wrap: wrap;
   color:#e0dddd;
-  font-family: helvetica, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 2rem; /*em and rem respond only to zoom - if viewport resize needed use - vw/vh*/
-  font-weight: 100;
 }
 
 .userQues-section{
@@ -55,7 +56,7 @@ html,body{
 
 header{
   height:auto;
-  background-color: #111511;
+  background-color: #212121;
   padding:0.5% 0.5% 0.5% 2%;
   margin:1% 2% 1% 2%;
 }
@@ -71,8 +72,6 @@ header{
 
 .userQuestion input{
   font-size: 1em;
-  font-weight: 100;
-  font-family: helvetica, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   background:none;
   border:0px;
@@ -122,6 +121,32 @@ footer{
 .show{
   display:block;
 }
+
+#loader {
+  border: 12px solid #e6e3e3;
+  border-radius: 50%;
+  border-top: 7px solid #de6c6c;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.blur{
+  filter:blur(8px);
+}
+
 
 @media only screen and (max-width:500px){
   header{
