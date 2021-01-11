@@ -5,6 +5,7 @@ function clickEvent(ques){
   });
 
   userReply.classList.toggle('blur');
+  loader.classList.toggle('hide');
   var xhr = new XMLHttpRequest(); /*XMLHttpRequest Syntax*/
   xhr.withCredentials = true;
 
