@@ -5,6 +5,7 @@ html,body{
   overflow:hidden;
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container{
@@ -20,7 +21,6 @@ html,body{
   align-items: center;
   flex-wrap: wrap;
   color:#e0dddd;
-  -webkit-font-smoothing: antialiased;
   font-size: 2rem; /*em and rem respond only to zoom - if viewport resize needed use - vw/vh*/
 }
 
@@ -58,26 +58,44 @@ header{
   height:auto;
   background-color: #212121;
   padding:0.5% 0.5% 0.5% 2%;
-  margin:1% 2% 1% 2%;
+  margin:1% 2% 0% 2%;
+  cursor: pointer;
+}
+
+@keyframes slideFromTop{
+  0%{
+    transition:translateY(-100%);
+  }
+  100%{
+    transition:translateY(0%);
+  }
+}
+
+header:hover > .header-desc{
+  display: block;
+  animation: 1.5s ease-out 0s 1 slideFromTop;
+  font-size: 0.5em;
+  color: #fff;
+  padding: 0.5% 0% 0.5% 0%;
+  width: 100%;
 }
 
 .userQuestion{
   height: auto;
-  padding-left:5%;
-  padding-top: 2%;
-  /*box-shadow: inset 0px 0px 0px 3px #004682;*/
+  margin-left:5%;
+  padding: 2%;
+  border-left: 1px solid #FF9800;
   -webkit-transition: ease 2s; /* transition properties*/
   transition: ease 2s;
 }
 
 .userQuestion input{
   font-size: 1em;
-  -webkit-font-smoothing: antialiased;
   background:none;
   border:0px;
-  border-left: 1px solid #f9a825;
   color:#de6c6c;
   padding-left: 1%;
+  cursor: pointer;
 }
 
 .userQuestion input:focus{
@@ -87,6 +105,7 @@ header{
 
 .userQuestion input::placeholder{
   color:#de6c6c;
+  font-weight: 100;
 }
 
 .userReply{
@@ -123,7 +142,7 @@ footer{
 }
 
 #loader {
-  border: 12px solid #e6e3e3;
+  border: 7px solid #e6e3e3;
   border-radius: 50%;
   border-top: 7px solid #de6c6c;
   width: 25px;
