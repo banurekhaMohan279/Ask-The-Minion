@@ -11,11 +11,11 @@ function clickEvent(ques){
 
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === this.DONE ) {
-      loader.classList.toggle('hide');
-      userReply.classList.toggle('blur');
       let random=Math.floor(Math.random() * 4) + 1;/*Generate random number in range*/
       let responseType = JSON.parse(this.responseText).label;
-      document.getElementById("minionImg").src="img/"+responseType+"Minion"+random+".gif"; /* Modify HTML with JS result*/
+      document.getElementById("minionImg").src = "img/"+responseType+"Minion"+random+".gif"; /* Modify HTML with JS result*/
+      loader.classList.toggle('hide');
+      userReply.classList.toggle('blur');
     }
   });
 
