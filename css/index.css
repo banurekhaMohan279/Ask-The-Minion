@@ -90,12 +90,12 @@ header:hover > .header-desc{
 }
 
 .userQuestion input{
-  font-size: 1em;
   background:none;
   border:0px;
   color:#de6c6c;
   padding-left: 1%;
   cursor: pointer;
+  font: 100 1em 'Open Sans';
 }
 
 .userQuestion input:focus{
