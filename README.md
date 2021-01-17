@@ -1,5 +1,5 @@
 # Ask-The-Minion
-Ask a minion your question and wait for the fun to begin!
+Ask a minion your question and wait for the fun to begin!!
 
 ### ![App at work](https://github.com/banurekhaMohan279/Ask-The-Minion/blob/master/img/workingModel.gif)
 
